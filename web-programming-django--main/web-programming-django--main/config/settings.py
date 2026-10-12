@@ -85,8 +85,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'main' / 'static',
 ]
 
-//new
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles' #add
 
 # --- LOGOUT & LOGIN SETTINGS ---
 LOGIN_REDIRECT_URL = 'main:index' 
