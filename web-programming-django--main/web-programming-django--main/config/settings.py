@@ -85,11 +85,15 @@ STATICFILES_DIRS = [
     BASE_DIR / 'main' / 'static',
 ]
 
+//new
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # --- LOGOUT & LOGIN SETTINGS ---
 LOGIN_REDIRECT_URL = 'main:index' 
 LOGOUT_REDIRECT_URL = 'main:index' 
 LOGIN_URL = 'login'
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'http://localhost:8000']
+# CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'http://localhost:8000']  #Before
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'http://localhost:8000', 'https://*.onrender.com']  #after
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
